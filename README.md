@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `9a1a357bdbe2e5e8d91e91bd1c13abca3b408a4f97eab667171bbc2161999e41`
+- **SHA256:** `ad2ed85eb7b9203c5c47f454d4eb88c760f751316de0ac09f7d284a578f2227b`
 
 ---
 
@@ -52,7 +52,7 @@ CozyKey không chỉ là bộ gõ tiếng Việt.
 - Chuyển **có dấu → không dấu** ngay trong app.
 - Tùy chọn thay khoảng trắng và đổi kiểu chữ (thường/hoa).
 
-### 4) Dictation (soạn giọng nói)
+### 4) Dictation (gõ bằng giọng nói)
 - Gọi nhanh bằng `Ctrl+Shift+X`.
 - Tự dừng khi im lặng, chèn trực tiếp vào vị trí con trỏ.
 
@@ -106,7 +106,7 @@ CozyKey có “khung tập trung” riêng ngay menu chính:
 | `Ctrl + Shift + S` | Bật/tắt bộ gõ tiếng Việt |
 | `Ctrl + Shift + D` | Bắt đầu/Dừng Deep Work |
 | `Ctrl + Shift + M` | Bật/tắt nhắc thư giãn |
-| `Ctrl + Shift + X` | Bật/tắt soạn giọng nói |
+| `Ctrl + Shift + X` | Bật/tắt Dictation (gõ bằng giọng nói) |
 | `Ctrl + Shift + A` | Đổi vòng âm thanh gõ |
 | `Ctrl + Shift + Wheel` | Tăng/giảm âm lượng (khi bật) |
 | `Esc` | Hủy dictation khi đang ghi/đang xử lý |
