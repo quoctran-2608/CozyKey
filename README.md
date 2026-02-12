@@ -2,7 +2,8 @@
 
 # CozyKey
 
-**Bộ gõ tiếng Việt thông minh cho Windows – tối ưu cho gõ việc, code, học tập và tập trung sâu.**
+> **Bộ gõ tiếng Việt hiện đại cho Windows**  
+> Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
 ![Version](https://img.shields.io/badge/version-1.5.0-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
@@ -10,84 +11,116 @@
 
 ---
 
-## Tải bản mới nhất
+## 🚀 Tải bản mới nhất
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
-- **Dung lượng:** ~47 MB  
+- **Dung lượng:** ~47 MB
 - **SHA256:** `9a1a357bdbe2e5e8d91e91bd1c13abca3b408a4f97eab667171bbc2161999e41`
 
 ---
 
-## Điểm nổi bật của CozyKey
+## Vì sao CozyKey khác biệt?
 
-## 1) Bộ gõ tiếng Việt mạnh và linh hoạt
-- Hỗ trợ đầy đủ:
+CozyKey không chỉ là bộ gõ tiếng Việt.  
+Đây là công cụ “2 trong 1”: **gõ nhanh chính xác** + **giữ hiệu suất làm việc bền vững**.
+
+- Bộ gõ mạnh, nhiều mode, tối ưu mixed-language.
+- Có lớp tương thích ứng dụng để xử lý các app khó.
+- Tích hợp hệ sinh thái **Deep Work + Thư giãn** rất thực tế, có cá tính riêng.
+- Menu gọn, dùng nhanh, thông báo có nút **X** để tự đóng ngay.
+
+---
+
+## ✨ Tính năng nổi bật
+
+### 1) Bộ gõ tiếng Việt linh hoạt, chống gõ sai thông minh
+- Hỗ trợ:
   - **Telex**
   - **Simple Telex**
   - **Simple Telex 2**
   - **Telex + VNI**
-  - **VNI** (hỗ trợ cả numpad)
-- **Z-undo** + **Adaptive tuning** luôn bật mặc định để giảm gõ sai thực tế.
-- Tối ưu mixed-language (Việt + Anh + code) để hạn chế “bẻ” từ ngoài ý muốn.
+  - **VNI** (cả numpad)
+- **Z-undo + Adaptive tuning** luôn bật mặc định để giảm bẻ sai trong thực tế.
+- Hỗ trợ tốt môi trường gõ trộn Việt + Anh + code.
 
-## 2) Tương thích ứng dụng nâng cao (rất quan trọng)
-- **Cho phép f/j/w/z làm phụ âm** khi cần.
-- **Clipboard Compatibility Mode (Ctrl+V)** cho app khó nhận `SendInput`.
-- **Blacklist ứng dụng**: tự tắt bộ gõ theo app foreground để tránh xung đột.
+### 2) Tương thích ứng dụng nâng cao (điểm ăn tiền)
+- **Cho phép f/j/w/z làm phụ âm** (khi cần).
+- **Clipboard Compatibility Mode (Ctrl+V)** cho app không nhận Unicode input chuẩn.
+- **Blacklist theo ứng dụng**: tự tắt bộ gõ ở app foreground để tránh xung đột.
 
-## 3) Deep Work & Thư giãn tiện dụng
-- Deep Work có nhắc giữa chừng, nhắc khi còn 5 phút và nhắc hoàn thành.
-- Mindfulness nhắc nghỉ định kỳ mỗi 15 phút.
-- Tính năng Deep Work và Thư giãn đã được đưa lên menu chính để bật/tắt nhanh.
+### 3) Tiện ích văn bản tích hợp
+- Chuyển **có dấu → không dấu** ngay trong app.
+- Tùy chọn thay khoảng trắng và đổi kiểu chữ (thường/hoa).
 
-## 4) Dictation (soạn giọng nói)
+### 4) Dictation (soạn giọng nói)
 - Gọi nhanh bằng `Ctrl+Shift+X`.
-- Tự dừng khi im lặng, chuẩn hóa khoảng trắng/dấu câu.
-- Chèn trực tiếp vào vị trí con trỏ hiện tại.
-
-## 5) Tiện ích văn bản tích hợp
-- Chuyển **tiếng Việt có dấu → không dấu** ngay trong app.
-- Có tùy chọn thay space và đổi kiểu chữ (thường/hoa).
-
-## 6) Trải nghiệm người dùng tốt hơn
-- Menu đã tối giản và gom nhóm rõ ràng.
-- Thông báo có nút **X** để tự đóng ngay, không cần chờ auto-hide.
-- Âm thanh gõ phím đa kiểu + đổi nhanh bằng hotkey.
+- Tự dừng khi im lặng, chèn trực tiếp vào vị trí con trỏ.
 
 ---
 
-## Phím tắt nhanh
+## 🧘 Deep Work & Thư giãn – phần được yêu thích nhất
+
+CozyKey có “khung tập trung” riêng ngay menu chính:
+- `🔥 Bắt đầu Deep Work...`
+- `⏹️ Dừng Deep Work`
+- `🍃 Nhắc thư giãn mỗi 15 phút`
+
+### Deep Work: tập trung sâu nhưng không căng cứng
+- Chạy phiên làm việc theo task.
+- Có nhắc nhẹ khi còn nửa chặng, còn 5 phút, và nhắc theo nhịp.
+- Kết thúc phiên có lời nhắc break để tránh “cháy não”.
+
+### Mindfulness: nhắc thư giãn thật sự hữu ích
+- Mỗi 15 phút nhắc bạn thở, giãn cơ, uống nước, nghỉ mắt.
+- Tránh rơi vào trạng thái ngồi lì và quá tải thần kinh.
+
+---
+
+## 🌿 Ví dụ câu nhắc nhở trong CozyKey (trích từ app)
+
+### Mindfulness dịu nhẹ
+- “Hít vào sâu. Thở ra chậm. Mỉm cười nhẹ.”
+- “Chỉ cần một nhịp thở, mình quay về hiện tại.”
+- “Thả lỏng vai... và thở.”
+- “Uống một ngụm nước, rồi quay lại nhé.”
+- “Nhìn xa 20 giây để mắt được nghỉ.”
+
+### Deep Work nhắc đúng thời điểm
+- “Còn {x} phút. Hít thở sâu, tiếp tục nhé.”
+- “Đã qua nửa chặng đường! Còn {x} phút. Uống ngụm nước rồi tiếp nhé.”
+- “Còn 5 phút! Bạn sắp hoàn thành rồi.”
+
+### Break reminder có chất riêng, vui và nhớ lâu
+- “Não cậu đang bốc khói kìa! Nghỉ chút đi bro!”
+- “Vibe check! Đôi mắt cậu đỏ hoe rồi kìa! Nghỉ ngơi là tự thương bản thân đó!”
+- “Còn chờ gì nữa? Inbox người yêu 1 tin nhắn rồi hẵng quay lại làm việc!”
+
+> Mục tiêu: nhắc đúng lúc, dễ thương, không khô khan như timer truyền thống.
+
+---
+
+## ⚡ Phím tắt nhanh
 
 | Phím tắt | Chức năng |
 |----------|-----------|
 | `Ctrl + Shift + S` | Bật/tắt bộ gõ tiếng Việt |
-| `Ctrl + Shift + D` | Bắt đầu/dừng Deep Work |
+| `Ctrl + Shift + D` | Bắt đầu/Dừng Deep Work |
 | `Ctrl + Shift + M` | Bật/tắt nhắc thư giãn |
 | `Ctrl + Shift + X` | Bật/tắt soạn giọng nói |
 | `Ctrl + Shift + A` | Đổi vòng âm thanh gõ |
-| `Ctrl + Shift + Wheel` | Tăng/giảm âm lượng (nếu bật) |
+| `Ctrl + Shift + Wheel` | Tăng/giảm âm lượng (khi bật) |
 | `Esc` | Hủy dictation khi đang ghi/đang xử lý |
 
 ---
 
-## Cài đặt
-
-1. Tải file **CozyKey_Setup_v1.5.0.exe**
-2. Chạy installer (khuyên chạy bằng quyền Administrator)
-3. Làm theo hướng dẫn cài đặt
-4. Mở CozyKey từ Desktop/Start Menu
-5. Icon CozyKey sẽ nằm ở **system tray**
-
----
-
-## Cách xử lý nhanh khi gặp app “khó chiều”
+## 🧩 Khi nào nên bật “Tương thích ứng dụng”?
 
 Nếu gõ bị lỗi trong một app cụ thể:
-1. Vào `🧩 Tương thích ứng dụng`  
-2. Bật `Chế độ tương thích Clipboard (Ctrl+V)`  
-3. Nếu vẫn lỗi, thêm app đó vào `Blacklist`
+1. Vào `🧩 Tương thích ứng dụng`
+2. Bật `Chế độ tương thích Clipboard (Ctrl+V)`
+3. Nếu vẫn lỗi, thêm app vào `Blacklist`
 
-Ví dụ process name thường gặp:
+Ví dụ process name hay dùng:
 - `code`
 - `devenv`
 - `idea64`
@@ -95,10 +128,19 @@ Ví dụ process name thường gặp:
 
 ---
 
+## Cài đặt nhanh
+
+1. Tải **CozyKey_Setup_v1.5.0.exe**
+2. Chạy installer (khuyên chạy quyền Administrator)
+3. Cài đặt theo wizard
+4. Mở CozyKey và kiểm tra icon ở system tray
+
+---
+
 ## Yêu cầu hệ thống
 
 - Windows 10 / 11 (64-bit)
-- Máy có quyền cài ứng dụng desktop
+- Quyền cài ứng dụng desktop
 - Internet (nếu dùng Dictation API)
 
 ---
@@ -112,11 +154,10 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 
 ## Lịch sử phiên bản
 
-### v1.5.0 (2026) – Bản phát hành lớn
+### v1.5.0 (2026) – bản nâng cấp lớn
 - Hoàn tất lộ trình nâng cấp bộ gõ 10 bước.
-- Thêm nhiều mode gõ mới (Simple Telex, Simple Telex 2, Telex+VNI).
-- Tăng mạnh khả năng tương thích ứng dụng (Clipboard mode, Blacklist app...).
-- Thêm auto viết hoa sau `. ! ? Enter`.
-- Thêm telemetry ẩn + adaptive tuning.
+- Thêm nhiều mode gõ mới: Simple Telex, Simple Telex 2, Telex+VNI.
+- Tăng mạnh tương thích ứng dụng: Clipboard mode, Blacklist app, tối ưu mixed-language.
+- Auto viết hoa sau `. ! ? Enter`.
 - Tích hợp tiện ích chuyển có dấu → không dấu.
-- Tối ưu menu và trải nghiệm thông báo (có nút X để đóng nhanh).
+- Tối ưu menu và trải nghiệm thông báo (nút **X** đóng nhanh).
