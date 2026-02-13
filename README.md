@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `dc7610a8784a06449cfef70ba1331b92521de6c49a302b1546be4f372bc9c7ee`
+- **SHA256:** `869923dcd74f8918cf222063e981a495fdf7ebd73de905eb87cb105cc4b6f49a`
 
 ---
 
@@ -161,3 +161,4 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Auto viết hoa sau `. ! ? Enter`.
 - Tích hợp tiện ích chuyển có dấu → không dấu.
 - Tối ưu menu và trải nghiệm thông báo (nút **X** đóng nhanh).
+- Hotfix triệt để lỗi gõ `oo/aa/dd` bị adaptive chặn sai (gõ `oo` ra `ô` đúng ngay).
