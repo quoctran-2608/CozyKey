@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `869923dcd74f8918cf222063e981a495fdf7ebd73de905eb87cb105cc4b6f49a`
+- **SHA256:** `9847243ceb6f42ee2a710db781c70583c2963d305fe2e3d50f8d5f8c09e030a4`
 
 ---
 
@@ -50,7 +50,8 @@ CozyKey không chỉ là bộ gõ tiếng Việt.
 
 ### 3) Tiện ích văn bản tích hợp
 - Chuyển **có dấu → không dấu** ngay trong app.
-- Tùy chọn thay khoảng trắng và đổi kiểu chữ (thường/hoa).
+- Tùy chọn thay khoảng trắng và đổi kiểu chữ (**thường / HOA / Viết Hoa Ký Tự Đầu Mỗi Chữ**).
+- Có thể chọn **giữ dấu** hoặc **bỏ dấu** trước khi đổi kiểu chữ.
 
 ### 4) Dictation (gõ bằng giọng nói)
 - Gọi nhanh bằng `Ctrl+Shift+X`.
@@ -100,6 +101,11 @@ CozyKey có “khung tập trung” riêng ngay menu chính:
 ---
 
 ## ⚡ Phím tắt nhanh
+
+> CozyKey cho phép tùy chỉnh các phím tắt toàn cục trong:
+> `⚙️ Hành vi & phím tắt` → `Thiết lập phím tắt...`
+>
+> Bảng dưới là cấu hình mặc định:
 
 | Phím tắt | Chức năng |
 |----------|-----------|
@@ -162,3 +168,5 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Tích hợp tiện ích chuyển có dấu → không dấu.
 - Tối ưu menu và trải nghiệm thông báo (nút **X** đóng nhanh).
 - Hotfix triệt để lỗi gõ `oo/aa/dd` bị adaptive chặn sai (gõ `oo` ra `ô` đúng ngay).
+- Thêm màn hình **Thiết lập phím tắt**: đổi hotkey cho Toggle/Âm thanh/Deep Work/Mindfulness/Dictation.
+- Sửa lỗi hiển thị header trong màn hình thiết lập phím tắt (không còn mất chữ).
