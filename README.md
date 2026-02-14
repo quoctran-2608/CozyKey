@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `ee797da3a80da06f3eff6a5ba0f5c641f10d7aaa82b62837712a76ce769ae754`
+- **SHA256:** `1c9a66dd5f231b37256c4980a9616aa06f4429fbdbec1dc27b2e1fadfcfe2957`
 
 ---
 
@@ -174,3 +174,4 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Sửa lỗi loạn ký tự có dấu đầu tiên khi đổi ngữ cảnh nhập (click đổi ô, dùng Ctrl/Alt shortcut rồi gõ tiếp).
 - Chặn gán các phím tắt hệ thống/browser phổ biến (ví dụ `Ctrl+Shift+T`, `Ctrl+L`, `Ctrl+T`) để tránh CozyKey chiếm dụng.
 - Sửa triệt để thông báo Deep Work/Thư giãn không còn cướp focus con trỏ khi đang gõ.
+- Hotfix bổ sung: xử lý sâu đường hiển thị toast `no-activate` để tránh tình trạng bàn phím bị đơ sau khi nhắc Deep Work.
