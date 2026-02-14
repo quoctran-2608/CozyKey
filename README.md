@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `1f8581da64ebe2a281c79c5ab5110a9c0d5a450310a1515a97ef5bd79afaa211`
+- **SHA256:** `488288b1768d0580a7cbcd04d921cb2307f9edad344eaae0039f0046b6965872`
 
 ---
 
@@ -173,3 +173,4 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Hotfix nhiều vòng cho **Clipboard Compatibility** để gõ ổn định hơn trên Word/Excel/browser.
 - Sửa lỗi loạn ký tự có dấu đầu tiên khi đổi ngữ cảnh nhập (click đổi ô, dùng Ctrl/Alt shortcut rồi gõ tiếp).
 - Chặn gán các phím tắt hệ thống/browser phổ biến (ví dụ `Ctrl+Shift+T`, `Ctrl+L`, `Ctrl+T`) để tránh CozyKey chiếm dụng.
+- Sửa triệt để thông báo Deep Work/Thư giãn không còn cướp focus con trỏ khi đang gõ.
