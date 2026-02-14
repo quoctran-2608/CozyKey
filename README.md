@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `1c9a66dd5f231b37256c4980a9616aa06f4429fbdbec1dc27b2e1fadfcfe2957`
+- **SHA256:** `3cd15227e1e34ec9f7eb7585da035248e4d323c153a4f39f4d9d7fd6a21cf9f9`
 
 ---
 
@@ -175,3 +175,4 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Chặn gán các phím tắt hệ thống/browser phổ biến (ví dụ `Ctrl+Shift+T`, `Ctrl+L`, `Ctrl+T`) để tránh CozyKey chiếm dụng.
 - Sửa triệt để thông báo Deep Work/Thư giãn không còn cướp focus con trỏ khi đang gõ.
 - Hotfix bổ sung: xử lý sâu đường hiển thị toast `no-activate` để tránh tình trạng bàn phím bị đơ sau khi nhắc Deep Work.
+- Hotfix dứt điểm: tự phục hồi focus khỏi toast/helper ngay khi phát hiện, xử lý tình trạng đơ bàn phím ở lần bật nhắc Deep Work đầu tiên.
