@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `9847243ceb6f42ee2a710db781c70583c2963d305fe2e3d50f8d5f8c09e030a4`
+- **SHA256:** `1f8581da64ebe2a281c79c5ab5110a9c0d5a450310a1515a97ef5bd79afaa211`
 
 ---
 
@@ -170,3 +170,6 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Hotfix triệt để lỗi gõ `oo/aa/dd` bị adaptive chặn sai (gõ `oo` ra `ô` đúng ngay).
 - Thêm màn hình **Thiết lập phím tắt**: đổi hotkey cho Toggle/Âm thanh/Deep Work/Mindfulness/Dictation.
 - Sửa lỗi hiển thị header trong màn hình thiết lập phím tắt (không còn mất chữ).
+- Hotfix nhiều vòng cho **Clipboard Compatibility** để gõ ổn định hơn trên Word/Excel/browser.
+- Sửa lỗi loạn ký tự có dấu đầu tiên khi đổi ngữ cảnh nhập (click đổi ô, dùng Ctrl/Alt shortcut rồi gõ tiếp).
+- Chặn gán các phím tắt hệ thống/browser phổ biến (ví dụ `Ctrl+Shift+T`, `Ctrl+L`, `Ctrl+T`) để tránh CozyKey chiếm dụng.
