@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `488288b1768d0580a7cbcd04d921cb2307f9edad344eaae0039f0046b6965872`
+- **SHA256:** `ee797da3a80da06f3eff6a5ba0f5c641f10d7aaa82b62837712a76ce769ae754`
 
 ---
 
