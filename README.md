@@ -15,7 +15,7 @@
 
 - **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 - **Dung lượng:** ~47 MB
-- **SHA256:** `3cd15227e1e34ec9f7eb7585da035248e4d323c153a4f39f4d9d7fd6a21cf9f9`
+- **SHA256:** `90f55da922156b6be051ec4619c6e011cdb4fe15943649c4ed7a50e65022c9e9`
 
 ---
 
@@ -161,6 +161,16 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.5.0 (2026) – bản nâng cấp lớn
+- Build ổn định hiện tại được đóng gói từ source commit: `11b664b`.
+- Ghi chú commit đầy đủ của đợt ổn định này:
+  - `11b664b` – Reapply "Sửa triệt để lỗi đơ bàn phím do toast Deep Work cướp focus và cập nhật installer"
+  - `8821b13` – Revert "Sửa dứt điểm đơ bàn phím lần đầu sau Ctrl+Shift+M và cập nhật installer"
+  - `5c6edc4` – Hoàn tất revert b286470 và đồng bộ installer theo mã hiện tại
+  - `481556c` – Revert "Sửa triệt để lỗi đơ bàn phím do toast Deep Work cướp focus và cập nhật installer"
+  - `3acf459` – Sửa dứt điểm đơ bàn phím lần đầu sau Ctrl+Shift+M và cập nhật installer
+  - `b286470` – Sửa triệt để lỗi đơ bàn phím do toast Deep Work cướp focus và cập nhật installer
+  - `789ab62` – Sửa gốc lỗi toast cướp focus bằng hiển thị no-activate và cập nhật installer
+  - `b7064c2` – Sửa triệt để thông báo không cướp focus khi đang gõ và cập nhật installer mới
 - Hoàn tất lộ trình nâng cấp bộ gõ 10 bước.
 - Thêm nhiều mode gõ mới: Simple Telex, Simple Telex 2, Telex+VNI.
 - Tăng mạnh tương thích ứng dụng: Clipboard mode, Blacklist app, tối ưu mixed-language.
