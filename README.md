@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.5.0-blue)
+![Version](https://img.shields.io/badge/version-1.5.30-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,10 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer:** [⬇️ CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
-- **Dung lượng:** ~47 MB
-- **SHA256:** `90f55da922156b6be051ec4619c6e011cdb4fe15943649c4ed7a50e65022c9e9`
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.5.30.exe](./CozyKey_Setup_v1.5.30.exe)
+- **Dung lượng:** ~49 MB
+- **SHA256:** `a3138ca43ee4ff20da9b1d880fe688db9e65cada541ec0c8b3c65eb850a405e8`
+- **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
 
@@ -54,8 +55,14 @@ CozyKey không chỉ là bộ gõ tiếng Việt.
 - Có thể chọn **giữ dấu** hoặc **bỏ dấu** trước khi đổi kiểu chữ.
 
 ### 4) Dictation (gõ bằng giọng nói)
-- Gọi nhanh bằng `Ctrl+Shift+X`.
+- Gọi nhanh bằng `Alt+X`.
 - Tự dừng khi im lặng, chèn trực tiếp vào vị trí con trỏ.
+
+### 5) YouTube Mini Audio Player (mới)
+- Dán link YouTube và phát trực tiếp ngay trong CozyKey.
+- Mini mode để nghe là chính, chuyển nhanh giữa mini/large/fullscreen.
+- Điều khiển tua tới/lùi, tăng/giảm tốc độ bằng hotkey toàn cục.
+- Tự tối ưu fallback khi gặp lỗi playback/nhúng (153, Playback ID...).
 
 ---
 
@@ -109,11 +116,20 @@ CozyKey có “khung tập trung” riêng ngay menu chính:
 
 | Phím tắt | Chức năng |
 |----------|-----------|
-| `Ctrl + Shift + S` | Bật/tắt bộ gõ tiếng Việt |
-| `Ctrl + Shift + D` | Bắt đầu/Dừng Deep Work |
-| `Ctrl + Shift + M` | Bật/tắt nhắc thư giãn |
-| `Ctrl + Shift + X` | Bật/tắt Dictation (gõ bằng giọng nói) |
-| `Ctrl + Shift + A` | Đổi vòng âm thanh gõ |
+| `Alt + Z` | Bật/tắt bộ gõ tiếng Việt |
+| `Ctrl + Shift` | Bật/tắt bộ gõ kiểu EVKey (không cần thêm phím chữ) |
+| `Alt + A` | Đổi vòng âm thanh gõ |
+| `Alt + Q` | Bắt đầu/Dừng Deep Work |
+| `Alt + W` | Bật/tắt nhắc thư giãn |
+| `Alt + X` | Bật/tắt Dictation (gõ bằng giọng nói) |
+| `Alt + V` | YouTube: phát link từ clipboard |
+| `Alt + Y` | YouTube: mở/hiện cửa sổ player |
+| `Alt + M` | YouTube: chuyển Mini/Large |
+| `Alt + K` | YouTube: Play/Pause |
+| `Alt + J` | YouTube: tua lùi 10 giây |
+| `Alt + L` | YouTube: tua tới 10 giây |
+| `Alt + U` | YouTube: giảm tốc độ |
+| `Alt + I` | YouTube: tăng tốc độ |
 | `Ctrl + Shift + Wheel` | Tăng/giảm âm lượng (khi bật) |
 | `Esc` | Hủy dictation khi đang ghi/đang xử lý |
 
@@ -136,7 +152,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.5.0.exe**
+1. Tải **CozyKey_Setup_v1.5.30.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -159,6 +175,48 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.5.30 (2026) – YouTube + hotkey + spell-safe được hoàn thiện sâu
+- Commit source cho bản phát hành này: `16f4572`.
+- Các thay đổi lớn từ sau mốc `v1.5.0`:
+  - Tích hợp YouTube Player + Mini Audio mode.
+  - Ổn định WebView2 runtime và xử lý nhiều lỗi playback/embed.
+  - Hoàn thiện fullscreen/miniplayer UI, pin, auto-hide, transparent controls.
+  - Tối ưu hotkey theo hướng tiện tay, giảm xung đột, hỗ trợ kiểu EVKey.
+  - Chặn mở trùng cửa sổ tiện ích (settings/towiac/blacklist).
+  - Sửa triệt để nhóm lỗi gõ mixed-language như `keep -> kêp`, `dowww/dowwnlo`.
+- Danh sách commit đầy đủ từ `11b664b` đến `16f4572`:
+  - `f30c4c5` – Tích hợp YouTube Player với tua/chỉnh tốc độ bằng phím tắt và cập nhật installer
+  - `31c1925` – Sửa triệt để lỗi YouTube không khởi tạo WebView2 và nâng installer lên v1.5.1
+  - `dff1243` – Sửa lỗi YouTube 153 bằng định danh Referer và phát hành installer v1.5.2
+  - `b77d7c0` – Khắc phục lỗi YouTube Playback ID bằng fallback watch page và phát hành v1.5.3
+  - `60abf0a` – Sửa lỗi phát link YouTube watch và giữ mốc thời gian t, phát hành installer v1.5.4
+  - `48d017e` – Thêm Mini Audio mode cho YouTube, ẩn tối đa cửa sổ và phát hành installer v1.5.5
+  - `96517cc` – Tối ưu UX YouTube Mini Audio và thêm phím tắt mở nhanh/phát từ clipboard, phát hành v1.5.6
+  - `0a9a7b0` – Sửa tự phát YouTube, mặc định auto-hide có nút ghim và tối giản mini mode, phát hành v1.5.7
+  - `f5157a3` – Tăng khả năng tự phát YouTube và sửa bỏ ghim chỉ ẩn cửa sổ không dừng nhạc, phát hành v1.5.8
+  - `0aadebb` – Bỏ cảnh báo autoplay, giữ mini mode có ghim và sửa khối đen che giao diện, phát hành v1.5.9
+  - `31929d8` – Sửa chế độ toàn màn hình YouTube hoạt động ổn định và phát hành installer v1.5.10
+  - `3a09ffa` – Sửa thoát toàn màn hình, ẩn lỗi ConnectionAborted giả và đồng bộ trạng thái âm lượng YouTube, phát hành v1.5.11
+  - `0664767` – Sửa nút toàn màn hình trong player và tối giản mini mode với ghim/fullscreen, phát hành v1.5.12
+  - `0ec95b2` – Sửa icon fullscreen đồng bộ, làm rõ nút mini mode và chỉ giữ installer v1.5.0 cùng v1.5.13
+  - `585e539` – Đồng bộ icon fullscreen theo trạng thái và tinh chỉnh nút mini mode tinh tế, phát hành v1.5.14
+  - `3a6a02f` – Sửa icon fullscreen đổi đúng trạng thái và làm nút mini mode mờ tinh tế, phát hành v1.5.15
+  - `52c0198` – Sửa dứt điểm icon fullscreen đổi tức thì và thiết kế nút mini mode mờ bo góc tinh tế, phát hành v1.5.16
+  - `9ac01e6` – Sửa dứt điểm lỗi phải bấm 2 lần để thoát fullscreen và làm nút mini player nền trong suốt, phát hành v1.5.17
+  - `a0a7d67` – Sửa triệt để nút toàn màn hình một chạm và bỏ nền nút mini player, phát hành v1.5.18
+  - `c639f78` – Tinh chỉnh nút mini player trong suốt mờ tinh tế hơn và ổn định fullscreen một chạm, phát hành v1.5.19
+  - `ea8fe2f` – Sửa dứt điểm lỗi fullscreen YouTube phải bấm 2 lần và tinh chỉnh nút mini player trong suốt tinh tế, phát hành v1.5.20
+  - `f651590` – Sửa đúng lỗi fullscreen từ nút custom phải bấm 2 lần và tinh chỉnh nút mini trong suốt viền mảnh hơn, phát hành v1.5.21
+  - `d3dc992` – Sửa đúng lỗi fullscreen nút YouTube khi vào bằng nút custom và bỏ thông báo chuyển mini/large, phát hành v1.5.22
+  - `98d7527` – Sửa dứt điểm lỗi nút YouTube fullscreen khi vào bằng nút custom và tinh chỉnh nút mini tinh tế hơn, phát hành v1.5.23
+  - `c4ed24b` – Tối ưu phím tắt YouTube tiện tay hơn và cải thiện thông báo xung đột hotkey, phát hành v1.5.24
+  - `fa63114` – Chuyển hotkey core sang Ctrl+Alt, tự migrate bộ cũ và phát hành installer v1.5.25
+  - `8e10dcf` – Khôi phục phím chuyển kiểu EVKey, tránh tê liệt toàn bộ hotkey khi xung đột và phát hành v1.5.26
+  - `a0e9b74` – Đổi mặc định hotkey Alt+phím, sửa xung đột hotkey và chặn mở trùng cửa sổ tiện ích, phát hành v1.5.27
+  - `6b9b764` – Sửa triệt để lỗi keep thành kêp và mở rộng spell-safe fallback cho các mẫu tương tự, phát hành v1.5.28
+  - `c457e4f` – Sửa triệt để lỗi lặp phím w sau undo (dow -> doww) và phát hành installer v1.5.29
+  - `16f4572` – Sửa triệt để lỗi dowww/dowwnlo sau undo phím w và phát hành installer v1.5.30
 
 ### v1.5.0 (2026) – bản nâng cấp lớn
 - Build ổn định hiện tại được đóng gói từ source commit: `11b664b`.
