@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.1-blue)
+![Version](https://img.shields.io/badge/version-1.6.2-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.1.exe](./CozyKey_Setup_v1.6.1.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.2.exe](./CozyKey_Setup_v1.6.2.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `c28dcd76eb8deed41e7a5f859e7618c9c564e0fd9f6e75cc70c779e9bb5842bb`
+- **SHA256:** `045227d0117abe052e7f71a1fe3cfbbefe5a350f45aa007d54ccf63505489519`
 - **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
@@ -152,7 +152,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.1.exe**
+1. Tải **CozyKey_Setup_v1.6.2.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -176,22 +176,22 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 
 ## Lịch sử phiên bản
 
+### v1.6.2 (2026) – Đổi sang trình duyệt YouTube tích hợp, không cần API key
+- Commit source cho bản phát hành này: `f072454`.
+- Phản hồi từ người dùng được áp dụng trực tiếp:
+  - Bỏ mô hình tìm kiếm qua YouTube Data API.
+  - Không cần nhập API key, không còn bước cấu hình gây phiền.
+- YouTube trong CozyKey giờ hoạt động theo kiểu trình duyệt mini:
+  - Mở giao diện YouTube web đầy đủ để tự tìm kiếm/chọn video.
+  - Có thanh nhập nhanh (từ khóa hoặc link), nút back/forward/reload/home.
+  - Có nút **Phát trong CozyKey** để chuyển video đang mở về player của app.
+- Giữ các cải tiến parser YouTube + test hồi quy từ v1.6.1 (`166/166` pass).
+- Chuỗi commit kỹ thuật chính:
+  - `f072454` – Đổi YouTube sang trình duyệt tích hợp, bỏ API key và phát hành v1.6.2
+
 ### v1.6.1 (2026) – Nâng cấp YouTube: tìm kiếm + duyệt danh sách video
 - Commit source cho bản phát hành này: `cdc111d`.
-- Bổ sung cửa sổ **YouTube Catalog** ngay trong CozyKey:
-  - Tìm kiếm video theo từ khóa.
-  - Chọn thứ tự kết quả: Liên quan / Mới nhất / Lượt xem cao.
-  - Duyệt playlist bằng link hoặc playlist ID.
-  - Hỗ trợ phân trang với nút **Tải thêm**.
-- Tăng tốc thao tác nghe/xem:
-  - Double-click hoặc bấm nút để phát ngay video được chọn.
-  - Có nút sao chép URL video.
-  - Tự ghi nhớ và mã hóa API key YouTube bằng DPAPI (theo user máy).
-- Nâng cấp parser + test:
-  - Tách được playlist ID từ `watch`, `playlist`, `youtu.be?...list=...`.
-  - Tổng test regression tăng lên `166/166` và pass toàn bộ ở bản phát hành này.
-- Chuỗi commit kỹ thuật chính:
-  - `cdc111d` – Thêm YouTube search/list browser, cập nhật parser/tests và phát hành v1.6.1
+- Bản chuyển tiếp để thử nghiệm mô hình YouTube catalog theo API và ghi nhận phản hồi sử dụng thực tế.
 
 ### v1.6.0 (2026) – Mốc nâng cấp lớn: hoàn thiện gõ tự do kiểu EVKey
 - Commit source cho bản phát hành này: `e34435c`.
