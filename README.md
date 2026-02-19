@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.5.32-blue)
+![Version](https://img.shields.io/badge/version-1.6.0-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.5.32.exe](./CozyKey_Setup_v1.5.32.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.0.exe](./CozyKey_Setup_v1.6.0.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `00bf1d752019b9e162b3b701abdd066b4d40110b9fcbe1a03bc45958415238f2`
+- **SHA256:** `f1ae042bdda7be62d75ba5b613ab6655e2ae95fde81e62b6f60b29602eb98e8c`
 - **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
@@ -152,7 +152,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.5.32.exe**
+1. Tải **CozyKey_Setup_v1.6.0.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -175,6 +175,26 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.0 (2026) – Mốc nâng cấp lớn: hoàn thiện gõ tự do kiểu EVKey
+- Commit source cho bản phát hành này: `e34435c`.
+- Nâng mốc phiên bản chính từ nhánh 1.5.x lên **1.6.0** để đánh dấu giai đoạn ổn định mới của bộ gõ.
+- Hoàn thiện nhóm cải tiến gõ tự do:
+  - `lene` → `lên`
+  - `nene` / `nenes` → `nên` / `nến`
+  - `duocdwj` → `được`
+  - `ducd` / `ducds` → `đuc` / `đúc`
+- Duy trì an toàn mixed-language và tương thích mode:
+  - Không làm bật lại quy tắc `uow` trong **Simple Telex / Simple Telex 2**.
+  - Giữ đúng hành vi undo và fallback đã ổn định từ các bản trước.
+- Chất lượng phát hành:
+  - Build Release + test pass toàn bộ `156/156`.
+  - Installer mới đã đóng gói lại và cập nhật SHA256 đầy đủ.
+- Chuỗi commit kỹ thuật liên quan đến mốc v1.6.0:
+  - `ded66e6` – Nâng cấp gõ dấu tự do kiểu EVKey (`nenes -> nến`)
+  - `664247a` – Mở rộng `lene`, `duocdwj` và phát hành v1.5.31
+  - `d8a8878` – Mở rộng gõ chữ `đ` tự do (`ducd`, `ducds`) và phát hành v1.5.32
+  - `e34435c` – Nâng mốc phiên bản lớn lên v1.6.0, đồng bộ ghi chú phát hành đầy đủ
 
 ### v1.5.32 (2026) – Mở rộng gõ chữ đ tự do
 - Commit source cho bản phát hành này: `d8a8878`.
