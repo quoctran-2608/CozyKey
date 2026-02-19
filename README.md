@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Version](https://img.shields.io/badge/version-1.6.1-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.0.exe](./CozyKey_Setup_v1.6.0.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.1.exe](./CozyKey_Setup_v1.6.1.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `f1ae042bdda7be62d75ba5b613ab6655e2ae95fde81e62b6f60b29602eb98e8c`
+- **SHA256:** `c28dcd76eb8deed41e7a5f859e7618c9c564e0fd9f6e75cc70c779e9bb5842bb`
 - **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
@@ -152,7 +152,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.0.exe**
+1. Tải **CozyKey_Setup_v1.6.1.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -175,6 +175,23 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.1 (2026) – Nâng cấp YouTube: tìm kiếm + duyệt danh sách video
+- Commit source cho bản phát hành này: `cdc111d`.
+- Bổ sung cửa sổ **YouTube Catalog** ngay trong CozyKey:
+  - Tìm kiếm video theo từ khóa.
+  - Chọn thứ tự kết quả: Liên quan / Mới nhất / Lượt xem cao.
+  - Duyệt playlist bằng link hoặc playlist ID.
+  - Hỗ trợ phân trang với nút **Tải thêm**.
+- Tăng tốc thao tác nghe/xem:
+  - Double-click hoặc bấm nút để phát ngay video được chọn.
+  - Có nút sao chép URL video.
+  - Tự ghi nhớ và mã hóa API key YouTube bằng DPAPI (theo user máy).
+- Nâng cấp parser + test:
+  - Tách được playlist ID từ `watch`, `playlist`, `youtu.be?...list=...`.
+  - Tổng test regression tăng lên `166/166` và pass toàn bộ ở bản phát hành này.
+- Chuỗi commit kỹ thuật chính:
+  - `cdc111d` – Thêm YouTube search/list browser, cập nhật parser/tests và phát hành v1.6.1
 
 ### v1.6.0 (2026) – Mốc nâng cấp lớn: hoàn thiện gõ tự do kiểu EVKey
 - Commit source cho bản phát hành này: `e34435c`.
