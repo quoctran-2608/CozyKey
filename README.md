@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.5.30-blue)
+![Version](https://img.shields.io/badge/version-1.5.31-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.5.30.exe](./CozyKey_Setup_v1.5.30.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.5.31.exe](./CozyKey_Setup_v1.5.31.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `a3138ca43ee4ff20da9b1d880fe688db9e65cada541ec0c8b3c65eb850a405e8`
+- **SHA256:** `f20650347871fdf9d759566abb73f50a5923b7a2b2cb63bd6ce45ba6ff98a4a1`
 - **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
@@ -152,7 +152,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.5.30.exe**
+1. Tải **CozyKey_Setup_v1.5.31.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -175,6 +175,17 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.5.31 (2026) – Nâng cấp gõ dấu tự do kiểu EVKey
+- Commit source cho bản phát hành này: `664247a`.
+- Tăng khả năng gõ dấu tự do:
+  - `lene` → `lên`
+  - `nene` / `nenes` → `nên` / `nến`
+  - `duocdwj` → `được`
+- Giữ tương thích các mode Simple Telex (không làm bật lại quy tắc `uow` khi mode đã tắt).
+- Commit liên quan kể từ mốc v1.5.30:
+  - `ded66e6` – Nâng cấp gõ dấu tự do kiểu EVKey (`nenes -> nến`)
+  - `664247a` – Mở rộng thêm `lene`, `duocdwj` và phát hành installer v1.5.31
 
 ### v1.5.30 (2026) – YouTube + hotkey + spell-safe được hoàn thiện sâu
 - Commit source cho bản phát hành này: `16f4572`.
