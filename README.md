@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.2-blue)
+![Version](https://img.shields.io/badge/version-1.6.3-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.2.exe](./CozyKey_Setup_v1.6.2.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.3.exe](./CozyKey_Setup_v1.6.3.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `045227d0117abe052e7f71a1fe3cfbbefe5a350f45aa007d54ccf63505489519`
+- **SHA256:** `58da87515fc5e280ace6519b64ff2a8313c4d525f132f1c34b610f10f51ed8b6`
 - **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
@@ -152,7 +152,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.2.exe**
+1. Tải **CozyKey_Setup_v1.6.3.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -175,6 +175,19 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
+- Commit source cho bản phát hành này: `bb2de74`.
+- Sửa lỗi hiếm, khó tái hiện nhưng gây khó chịu khi gõ văn bản dài:
+  - Ví dụ đang gõ `nên`, bấm space có lúc bị bật thành `neen`.
+  - Sau khi xóa và gõ lại thì từ hoạt động bình thường.
+- Nguyên nhân chính: trạng thái `prefer literal` có thể bị giữ quá lâu sau nhánh double-key undo (`aa/ee/oo`) ở token ngắn.
+- Giải pháp:
+  - Tinh chỉnh heuristic trong `KeyboardProcessor` để không khóa literal quá cứng cho chuỗi ngắn.
+  - Cho phép quay lại nhánh convert sớm hơn ở các âm tiết tiếng Việt ngắn.
+- Chất lượng phát hành:
+  - Build Release và test pass `166/166`.
+  - Đã đóng gói installer mới + cập nhật SHA256 đầy đủ.
 
 ### v1.6.2 (2026) – Đổi sang trình duyệt YouTube tích hợp, không cần API key
 - Commit source cho bản phát hành này: `f072454`.
