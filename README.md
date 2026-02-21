@@ -16,7 +16,7 @@
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
 - **SHA256:** `02f7ef10078a849118947c342219804453c46e1de7d2fe017cf2701a6c3085f5`
-- **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
+- **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
 
