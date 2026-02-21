@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `5f93940c442fd946e99a7386d2cd0bb9127ed38b0bc05adee71aabc2d8e88b64`
+- **SHA256:** `02f7ef10078a849118947c342219804453c46e1de7d2fe017cf2701a6c3085f5`
 - **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
@@ -177,7 +177,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.4 (2026) – Sửa Start with Windows cho ứng dụng chạy quyền Admin
-- Commit source cho bản phát hành này: `7f1f100`.
+- Commit source cho bản phát hành này: `4f5452b`.
 - Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
 - Nguyên nhân gốc:
   - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
@@ -186,8 +186,11 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Chuyển sang **Scheduled Task (RunLevel Highest)** để tự chạy khi đăng nhập mà không vướng UAC popup mỗi lần.
   - Bật/tắt startup trong app giờ đồng bộ theo Scheduled Task và dọn cấu hình cũ `HKCU\Run`.
   - Installer cập nhật cùng cơ chế startup mới, không còn dựa vào startup shortcut/Run key truyền thống.
+- Hotfix bổ sung cho spell-safe fallback:
+  - Sửa trường hợp kiểu `gooogle/google` có thể bị bật lại conversion sai ở ký tự cuối.
+  - Thêm regression tests để chặn các mẫu lỗi tương tự.
 - Chất lượng phát hành:
-  - Build Release + test pass `166/166`.
+  - Build Release + test pass `169/169`.
   - Installer v1.6.4 đã đóng gói lại với SHA256 mới.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
