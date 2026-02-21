@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.3-blue)
+![Version](https://img.shields.io/badge/version-1.6.4-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.3.exe](./CozyKey_Setup_v1.6.3.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `58da87515fc5e280ace6519b64ff2a8313c4d525f132f1c34b610f10f51ed8b6`
+- **SHA256:** `5f93940c442fd946e99a7386d2cd0bb9127ed38b0bc05adee71aabc2d8e88b64`
 - **Bản mốc cũ để đối chiếu:** [CozyKey_Setup_v1.5.0.exe](./CozyKey_Setup_v1.5.0.exe)
 
 ---
@@ -152,7 +152,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.3.exe**
+1. Tải **CozyKey_Setup_v1.6.4.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -175,6 +175,20 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.4 (2026) – Sửa Start with Windows cho ứng dụng chạy quyền Admin
+- Commit source cho bản phát hành này: `7f1f100`.
+- Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
+- Nguyên nhân gốc:
+  - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
+  - Cơ chế startup cũ (startup folder / `HKCU\Run`) không ổn định cho app bắt buộc quyền Admin.
+- Giải pháp áp dụng:
+  - Chuyển sang **Scheduled Task (RunLevel Highest)** để tự chạy khi đăng nhập mà không vướng UAC popup mỗi lần.
+  - Bật/tắt startup trong app giờ đồng bộ theo Scheduled Task và dọn cấu hình cũ `HKCU\Run`.
+  - Installer cập nhật cùng cơ chế startup mới, không còn dựa vào startup shortcut/Run key truyền thống.
+- Chất lượng phát hành:
+  - Build Release + test pass `166/166`.
+  - Installer v1.6.4 đã đóng gói lại với SHA256 mới.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
 - Commit source cho bản phát hành này: `bb2de74`.
