@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `02f7ef10078a849118947c342219804453c46e1de7d2fe017cf2701a6c3085f5`
+- **SHA256:** `8264d2429f1d52340cc52f1bb691aa8f9b5bf7f5dfb111965237d0fa820343bf`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -62,6 +62,9 @@ CozyKey không chỉ là bộ gõ tiếng Việt.
 - Dán link YouTube và phát trực tiếp ngay trong CozyKey.
 - Mini mode để nghe là chính, chuyển nhanh giữa mini/large/fullscreen.
 - Điều khiển tua tới/lùi, tăng/giảm tốc độ bằng hotkey toàn cục.
+- Hotkey `Alt + B` mở nhanh cửa sổ tìm kiếm/chọn video và tự focus vào ô nhập.
+- Khi video đang phát, menu chuột phải hiển thị ngay dòng trạng thái “▶ đang phát...”, bấm vào để mở player.
+- Nút **Phát trong CozyKey** tự đóng cửa sổ tìm kiếm, chỉ giữ cửa sổ player để tránh rối màn hình.
 - Tự tối ưu fallback khi gặp lỗi playback/nhúng (153, Playback ID...).
 
 ---
@@ -124,6 +127,7 @@ CozyKey có “khung tập trung” riêng ngay menu chính:
 | `Alt + X` | Bật/tắt Dictation (gõ bằng giọng nói) |
 | `Alt + V` | YouTube: phát link từ clipboard |
 | `Alt + Y` | YouTube: mở/hiện cửa sổ player |
+| `Alt + B` | YouTube: mở cửa sổ tìm kiếm/chọn video |
 | `Alt + M` | YouTube: chuyển Mini/Large |
 | `Alt + K` | YouTube: Play/Pause |
 | `Alt + J` | YouTube: tua lùi 10 giây |
@@ -177,7 +181,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.4 (2026) – Sửa Start with Windows cho ứng dụng chạy quyền Admin
-- Commit source cho bản phát hành này: `4f5452b`.
+- Commit source cho bản phát hành này: `5703a58`.
 - Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
 - Nguyên nhân gốc:
   - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
@@ -189,9 +193,14 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Hotfix bổ sung cho spell-safe fallback:
   - Sửa trường hợp kiểu `gooogle/google` có thể bị bật lại conversion sai ở ký tự cuối.
   - Thêm regression tests để chặn các mẫu lỗi tương tự.
+- Cập nhật UX YouTube theo phản hồi người dùng:
+  - Dòng trạng thái “đang phát” hiển thị ngay ngoài menu chính, nằm dưới mục `🎬 YouTube (nghe/xem)`.
+  - Trạng thái có hiệu ứng chữ chạy, bấm vào là mở cửa sổ player đang phát.
+  - `Alt+B` mở cửa sổ tìm kiếm và tự đặt con trỏ vào ô tìm kiếm.
+  - Bấm **Phát trong CozyKey** sẽ tự đóng cửa sổ tìm kiếm để chỉ giữ player.
 - Chất lượng phát hành:
   - Build Release + test pass `169/169`.
-  - Installer v1.6.4 đã đóng gói lại với SHA256 mới.
+  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `8264d2429f1d52340cc52f1bb691aa8f9b5bf7f5dfb111965237d0fa820343bf`.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
 - Commit source cho bản phát hành này: `bb2de74`.
