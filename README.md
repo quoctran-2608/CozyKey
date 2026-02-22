@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `8c1a5fdf08c9c8076566c4723e0d44dc1eda86f68326bd1e1d7d5b89322afa4a`
+- **SHA256:** `d97e61d7e2965dce753d8b1599bab60825112d4b6fb4512a9743d6ab1b93a23a`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -185,7 +185,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.4 (2026) – Sửa Start with Windows + nâng cấp YouTube và tiện ích văn bản
-- Commit source cho bản phát hành này: `cb20281`.
+- Commit source cho bản phát hành này: `363dbd3`.
 - Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
 - Nguyên nhân gốc:
   - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
@@ -208,9 +208,13 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Thêm ô **whitelist** để giữ lại ký tự đặc biệt cần thiết (`._-|`...).
   - Thêm nhiều ký tự nối khi thay khoảng trắng (`-`, `_`, `.`, `+`, `/`).
   - Thêm preset nhanh + dán clipboard + tự copy kết quả để thao tác nhanh hơn.
+- Hotfix sâu cho spell-safe fallback theo phản hồi gõ mixed-language:
+  - Sửa lỗi sai vị trí dấu với cụm `ia`: `nghia` → `nghĩa`, đồng bộ cả Telex và VNI.
+  - Sửa kiểu gõ từ tiếng Anh để không bị bẻ dấu sai: `gene`, `generator`, `calculator`, `blur` giữ nguyên literal.
+  - Siết nhận diện âm tiết tiếng Việt: kiểm tra cụm phụ âm đầu hợp lệ và chặn mẫu không hợp chính tả (`ge/gê` thiếu `h`, `bl...`).
 - Chất lượng phát hành:
-  - Build Release + test pass `172/172`.
-  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `8c1a5fdf08c9c8076566c4723e0d44dc1eda86f68326bd1e1d7d5b89322afa4a`.
+  - Build Release + test pass `177/177`.
+  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `d97e61d7e2965dce753d8b1599bab60825112d4b6fb4512a9743d6ab1b93a23a`.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
 - Commit source cho bản phát hành này: `bb2de74`.
