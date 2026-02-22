@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `8264d2429f1d52340cc52f1bb691aa8f9b5bf7f5dfb111965237d0fa820343bf`
+- **SHA256:** `8c1a5fdf08c9c8076566c4723e0d44dc1eda86f68326bd1e1d7d5b89322afa4a`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -53,6 +53,10 @@ CozyKey không chỉ là bộ gõ tiếng Việt.
 - Chuyển **có dấu → không dấu** ngay trong app.
 - Tùy chọn thay khoảng trắng và đổi kiểu chữ (**thường / HOA / Viết Hoa Ký Tự Đầu Mỗi Chữ**).
 - Có thể chọn **giữ dấu** hoặc **bỏ dấu** trước khi đổi kiểu chữ.
+- Hỗ trợ **xóa dấu câu tự động** (bao gồm dấu phẩy và ký tự `|`).
+- Có ô **whitelist ký tự giữ lại** khi xóa dấu câu (ví dụ `._-|` cho tên file/version).
+- Có **preset nhanh**: Slug URL, Tiêu đề đẹp, Tên file an toàn, Bỏ dấu giữ khoảng trắng.
+- Có nút **Dán từ Clipboard** và tùy chọn **Tự copy kết quả**.
 
 ### 4) Dictation (gõ bằng giọng nói)
 - Gọi nhanh bằng `Alt+X`.
@@ -180,8 +184,8 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 
 ## Lịch sử phiên bản
 
-### v1.6.4 (2026) – Sửa Start with Windows cho ứng dụng chạy quyền Admin
-- Commit source cho bản phát hành này: `5703a58`.
+### v1.6.4 (2026) – Sửa Start with Windows + nâng cấp YouTube và tiện ích văn bản
+- Commit source cho bản phát hành này: `cb20281`.
 - Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
 - Nguyên nhân gốc:
   - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
@@ -198,9 +202,15 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Trạng thái có hiệu ứng chữ chạy, bấm vào là mở cửa sổ player đang phát.
   - `Alt+B` mở cửa sổ tìm kiếm và tự đặt con trỏ vào ô tìm kiếm.
   - Bấm **Phát trong CozyKey** sẽ tự đóng cửa sổ tìm kiếm để chỉ giữ player.
+- Nâng cấp tiện ích **Chuyển đổi văn bản** theo phản hồi sử dụng thực tế:
+  - Đưa lên **menu cấp một**: bấm `📝 Chuyển đổi văn bản...` là mở ngay.
+  - Thêm chế độ **xóa dấu câu tự động** (bao gồm dấu phẩy và ký tự `|`).
+  - Thêm ô **whitelist** để giữ lại ký tự đặc biệt cần thiết (`._-|`...).
+  - Thêm nhiều ký tự nối khi thay khoảng trắng (`-`, `_`, `.`, `+`, `/`).
+  - Thêm preset nhanh + dán clipboard + tự copy kết quả để thao tác nhanh hơn.
 - Chất lượng phát hành:
-  - Build Release + test pass `169/169`.
-  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `8264d2429f1d52340cc52f1bb691aa8f9b5bf7f5dfb111965237d0fa820343bf`.
+  - Build Release + test pass `172/172`.
+  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `8c1a5fdf08c9c8076566c4723e0d44dc1eda86f68326bd1e1d7d5b89322afa4a`.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
 - Commit source cho bản phát hành này: `bb2de74`.
