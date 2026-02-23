@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `3ffe456c49a903b468fae180680bf449413645baefd9d5529a5d994100e692e0`
+- **SHA256:** `017823a1b389e5eb36ecd97235e5dfbcba3e8bf048573bc37476222d4f5d641f`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -185,7 +185,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.4 (2026) – Sửa Start with Windows + nâng cấp YouTube và tiện ích văn bản
-- Commit source cho bản phát hành này: `9b46e1c`.
+- Commit source cho bản phát hành này: `3afb7c7`.
 - Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
 - Nguyên nhân gốc:
   - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
@@ -215,9 +215,12 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Hotfix icon system tray theo phản hồi Dark mode:
   - Loại bỏ hoàn toàn nền tròn phía sau icon để không còn vòng trắng trên taskbar Dark mode.
   - Icon giờ chỉ còn chữ trắng viền đen (`V/E`) và lá xanh trên nền trong suốt.
+- Hotfix giữ nguyên chữ hoa giữa từ khi gõ liền:
+  - Sửa lỗi chuỗi camelCase/PascalCase bị tự hạ chữ hoa giữa từ, ví dụ `HappyNew` bị thành `Happynew`.
+  - Giờ các chuỗi như `HappyNew`, `parseJSON`, `myHTTPServer` được giữ nguyên đúng ký tự người dùng gõ.
 - Chất lượng phát hành:
   - Build Release + test pass `177/177`.
-  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `3ffe456c49a903b468fae180680bf449413645baefd9d5529a5d994100e692e0`.
+  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `017823a1b389e5eb36ecd97235e5dfbcba3e8bf048573bc37476222d4f5d641f`.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
 - Commit source cho bản phát hành này: `bb2de74`.
