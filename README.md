@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `db1b7d7291318de0dd2aa0220ff24a997483bdb58a2136e6a1bbd5401fd62b25`
+- **SHA256:** `e03247a548a0d412ab9b7c5921ceb27b01479eb85f33ba2f0488f0da26bf7e8f`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -185,7 +185,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.4 (2026) – Sửa Start with Windows + nâng cấp YouTube và tiện ích văn bản
-- Commit source cho bản phát hành này: `4004feb`.
+- Commit source cho bản phát hành này: `b0e5d9c`.
 - Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
 - Nguyên nhân gốc:
   - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
@@ -222,9 +222,13 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Sửa lỗi `cám ơn` có thể bị bật thành `cám own` do adaptive literal học cũ.
   - Chặn adaptive override trên âm tiết Việt hợp lệ (ví dụ `own → ơn`, `dduowc → được`, `nguoiw → người`).
   - Bổ sung regression tests để tránh tái phát lỗi khi học literal cho một số từ tiếng Anh.
+- Tối ưu tương thích Windows 10 cho menu system tray:
+  - Sửa độ trễ mở menu chuột phải ở lần chạy đầu sau cài đặt trên Win10.
+  - Chuyển refresh trạng thái YouTube sang non-blocking để tránh khóa UI khi mở menu.
+  - Dùng system renderer + padding gọn trên Win10 giúp submenu xổ nhanh, mượt hơn.
 - Chất lượng phát hành:
-  - Build Release + test pass `178/178`.
-  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `db1b7d7291318de0dd2aa0220ff24a997483bdb58a2136e6a1bbd5401fd62b25`.
+  - Build Release + test pass `182/182`.
+  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `e03247a548a0d412ab9b7c5921ceb27b01479eb85f33ba2f0488f0da26bf7e8f`.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
 - Commit source cho bản phát hành này: `bb2de74`.
