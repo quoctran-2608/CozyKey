@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `e03247a548a0d412ab9b7c5921ceb27b01479eb85f33ba2f0488f0da26bf7e8f`
+- **SHA256:** `f972c6e99fc6972a7768eb00a5559b8ef5ebf6372b9a71fde836b919e93f6920`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -185,7 +185,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.4 (2026) – Sửa Start with Windows + nâng cấp YouTube và tiện ích văn bản
-- Commit source cho bản phát hành này: `b0e5d9c`.
+- Commit source cho bản phát hành này: `c844b22`.
 - Khắc phục lỗi người dùng phản ánh: bật “Khởi động cùng Windows” nhưng restart máy thì CozyKey không tự chạy.
 - Nguyên nhân gốc:
   - CozyKey dùng `requestedExecutionLevel=requireAdministrator`.
@@ -226,9 +226,12 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Sửa độ trễ mở menu chuột phải ở lần chạy đầu sau cài đặt trên Win10.
   - Chuyển refresh trạng thái YouTube sang non-blocking để tránh khóa UI khi mở menu.
   - Dùng system renderer + padding gọn trên Win10 giúp submenu xổ nhanh, mượt hơn.
+- Hotfix gốc cho phản hồi Win10:
+  - Dời tác vụ startup/TSF sang non-blocking sau khi message loop đã chạy để tránh chặn right-click lần đầu.
+  - Giữ nguyên renderer thiết kế đẹp (Cozy menu), không còn giao diện xấu như bản thử trước.
 - Chất lượng phát hành:
   - Build Release + test pass `182/182`.
-  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `e03247a548a0d412ab9b7c5921ceb27b01479eb85f33ba2f0488f0da26bf7e8f`.
+  - Installer v1.6.4 đã đóng gói lại với SHA256 mới `f972c6e99fc6972a7768eb00a5559b8ef5ebf6372b9a71fde836b919e93f6920`.
 
 ### v1.6.3 (2026) – Hotfix lỗi hiếm khi từ tiếng Việt bị trả về literal
 - Commit source cho bản phát hành này: `bb2de74`.
