@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.6-blue)
+![Version](https://img.shields.io/badge/version-1.6.7-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.6.exe](./CozyKey_Setup_v1.6.6.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.7.exe](./CozyKey_Setup_v1.6.7.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `00b5dca1b7ebfc752a8fbff75df1eced6d78f3bd4232e2eba8ad1ee096ee8ab1`
+- **SHA256:** `41a5d082ffbb99ea2cbc04d458c00eb2f2031b82bc9c698edb957009c324351f`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -160,7 +160,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.6.exe**
+1. Tải **CozyKey_Setup_v1.6.7.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -183,6 +183,26 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.7 (2026) – Sửa lỗi `voiws` và nhóm freestyle W tương tự
+- Commit source cho bản phát hành này: `3a8a23b`.
+- Sửa dứt điểm lỗi người dùng báo: gõ `voiws` không ra `với`, phải gõ vòng kiểu `vowsi`.
+- Nguyên nhân gốc:
+  - Deferred modifier `w` chỉ áp lên nguyên âm gần nhất.
+  - Với mẫu `...oiw`, engine chọn `i` thay vì quay về `o`, làm mất đường tạo `ơ`.
+- Cập nhật engine:
+  - Thêm cơ chế chọn lại mục tiêu deferred `w` cho mẫu có đuôi `i/y` (ví dụ `voiw + s -> với`).
+  - Giữ guard an toàn cụm `qu` và siết thêm nhánh `uw` để tránh bẻ `quw/quwi` thành `qư...`.
+- Regression tests mới:
+  - `voiw + s -> với`
+  - `toiw + s -> tới`
+  - `moiw + s -> mới`
+  - `quw -> quw`, `quwi -> quwi`
+- Quét tự động các mẫu `...wi...` vs `...iw...` để tìm lỗi tương tự; không còn trường hợp `...iw...` rơi về literal khi `...wi...` convert được.
+- Chất lượng phát hành:
+  - Build Release + test pass `191/191`.
+  - Installer v1.6.7 SHA256: `41a5d082ffbb99ea2cbc04d458c00eb2f2031b82bc9c698edb957009c324351f`.
+- Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.6.7.exe`.
 
 ### v1.6.6 (2026) – Sửa triệt để lỗi “kỳ quặc” và các mẫu `qu...w` tương tự
 - Commit source cho bản phát hành này: `d6e1815`.
