@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.4-blue)
+![Version](https://img.shields.io/badge/version-1.6.5-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.4.exe](./CozyKey_Setup_v1.6.4.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.5.exe](./CozyKey_Setup_v1.6.5.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `f972c6e99fc6972a7768eb00a5559b8ef5ebf6372b9a71fde836b919e93f6920`
+- **SHA256:** `af6fd5b312eef9b0ed46ff63eb6fbf99c5b17b59e0027ab57fd480fbf69ec542`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -160,7 +160,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.4.exe**
+1. Tải **CozyKey_Setup_v1.6.5.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -183,6 +183,20 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.5 (2026) – Hotfix triệt để lỗi gõ tiếng Việt trong Notepad
+- Commit source cho bản phát hành này: `e2d11f1`.
+- Sửa dứt điểm lỗi chỉ xảy ra trong Notepad: bắt đầu gõ chữ có dấu thì ký tự mới bị mất hoặc xóa lùi sai vào chữ trước đó.
+- Đổi chiến lược replace cho Notepad sang thao tác selection trực tiếp trên RichEdit/Edit:
+  - `EM_GETSEL` để lấy vùng caret/selection.
+  - `EM_SETSEL` để đặt vùng thay thế chính xác.
+  - `EM_REPLACESEL` để ghi đè đúng phần cần thay.
+- Bổ sung `SendMessageTimeoutW` + `SMTO_ABORTIFHUNG` để tránh treo/race khi gửi message điều khiển.
+- Tăng độ ổn định lấy focus input bằng `GetGUIThreadInfo`.
+- Thêm chế độ debug log gõ phím bật/tắt được từ menu để truy vết nhanh lỗi theo ứng dụng.
+- Chất lượng phát hành:
+  - Build Release + test pass `182/182`.
+  - Installer v1.6.5 SHA256: `af6fd5b312eef9b0ed46ff63eb6fbf99c5b17b59e0027ab57fd480fbf69ec542`.
 
 ### v1.6.4 (2026) – Sửa Start with Windows + nâng cấp YouTube và tiện ích văn bản
 - Commit source cho bản phát hành này: `c844b22`.
