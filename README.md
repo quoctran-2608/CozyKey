@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.8-blue)
+![Version](https://img.shields.io/badge/version-1.6.9-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.8.exe](./CozyKey_Setup_v1.6.8.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.9.exe](./CozyKey_Setup_v1.6.9.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `52c0ad7f132376ea5babb9c9c20ac3cd4eef89ed75cb983b60a1a3632df3dcbe`
+- **SHA256:** `cc477fbc79f783896b620d72d3d2036e6acb7806ed24c5623903e1a22a3194f7`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -160,7 +160,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.8.exe**
+1. Tải **CozyKey_Setup_v1.6.9.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -183,6 +183,23 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
+- Commit source cho bản phát hành này: `e85cb39`.
+- Tích hợp bộ âm thanh Deep Work theo hướng FocusFlow:
+  - Nhịp đồng hồ (ticking) chạy nền khi đang Deep Work.
+  - Hiệu ứng thư giãn nền: đêm yên tĩnh, mưa nhỏ, mưa lớn, hồ nước, sóng biển.
+  - Nhắc nhở bằng giọng nói theo mốc phút còn lại và thông báo kết thúc phiên.
+- Thêm mục `🎧 Cài đặt âm thanh Deep Work...` trong tray menu để:
+  - Bật/tắt ticking.
+  - Chọn ambient effect.
+  - Bật/tắt nhắc giọng nói.
+  - Chỉnh âm lượng riêng cho từng nhóm âm thanh.
+- Đóng gói assets âm thanh trong installer (`Assets/FocusAudio/...`), không cần tải thêm.
+- Chất lượng phát hành:
+  - Build Release + test pass `191/191`.
+  - Installer v1.6.9 SHA256: `cc477fbc79f783896b620d72d3d2036e6acb7806ed24c5623903e1a22a3194f7`.
+- Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.6.9.exe`.
 
 ### v1.6.8 (2026) – Hotfix Deep Work/Mindfulness không hiện thông báo ổn định
 - Commit source cho bản phát hành này: `bfaff24`.
