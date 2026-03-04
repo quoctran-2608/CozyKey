@@ -185,7 +185,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
-- Commit source cho bản phát hành này: `715c059`.
+- Commit source cho bản phát hành này: `ddb98e9`.
 - Tích hợp bộ âm thanh Deep Work theo hướng FocusFlow:
   - Nhịp đồng hồ (ticking) chạy nền khi đang Deep Work.
   - Hiệu ứng thư giãn nền: đêm yên tĩnh, mưa nhỏ, mưa lớn, hồ nước, sóng biển.
