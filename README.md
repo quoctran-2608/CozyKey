@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.7-blue)
+![Version](https://img.shields.io/badge/version-1.6.8-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.7.exe](./CozyKey_Setup_v1.6.7.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.8.exe](./CozyKey_Setup_v1.6.8.exe)
 - **Dung lượng:** ~49 MB
-- **SHA256:** `41a5d082ffbb99ea2cbc04d458c00eb2f2031b82bc9c698edb957009c324351f`
+- **SHA256:** `52c0ad7f132376ea5babb9c9c20ac3cd4eef89ed75cb983b60a1a3632df3dcbe`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -160,7 +160,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.7.exe**
+1. Tải **CozyKey_Setup_v1.6.8.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -183,6 +183,18 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.6.8 (2026) – Hotfix Deep Work/Mindfulness không hiện thông báo ổn định
+- Commit source cho bản phát hành này: `bfaff24`.
+- Sửa gấp lỗi người dùng báo: bật Deep Work / Nhắc thư giãn nhưng không thấy thông báo.
+- Cập nhật cốt lõi:
+  - Chuẩn hóa đường hiển thị toast về đúng UI thread bằng `BeginInvoke`.
+  - Bổ sung fallback `NotifyIcon.ShowBalloonTip` cho thông báo Focus để luôn có tín hiệu nhìn thấy.
+  - Đổi logic reminder Deep Work sang kiểu crossing-threshold, tránh bỏ mốc nhắc khi timer lệch nhịp.
+- Chất lượng phát hành:
+  - Build Release + test pass `191/191`.
+  - Installer v1.6.8 SHA256: `52c0ad7f132376ea5babb9c9c20ac3cd4eef89ed75cb983b60a1a3632df3dcbe`.
+- Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.6.8.exe`.
 
 ### v1.6.7 (2026) – Sửa lỗi `voiws` và nhóm freestyle W tương tự
 - Commit source cho bản phát hành này: `3a8a23b`.
