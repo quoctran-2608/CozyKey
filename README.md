@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.9.exe](./CozyKey_Setup_v1.6.9.exe)
 - **Dung lượng:** ~51 MB
-- **SHA256:** `7f4922509ba3c4bb0cab0c2bb994a369b3af254e5f7a06ab19076e3212ad9433`
+- **SHA256:** `d9bcf7bf95ff94e6a37271e13ced01f073cbb49d009f39e765b421ae1426d143`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -127,6 +127,9 @@ CozyKey có “khung tập trung” riêng ngay menu chính:
 | `Ctrl + Shift` | Bật/tắt bộ gõ kiểu EVKey (không cần thêm phím chữ) |
 | `Alt + A` | Đổi vòng âm thanh gõ |
 | `Alt + Q` | Bắt đầu/Dừng Deep Work |
+| `Alt + 1` | Deep Work: bật/tắt nhịp đồng hồ |
+| `Alt + 2` | Deep Work: bật/tắt hiệu ứng nền |
+| `Alt + 3` | Deep Work: bật/tắt nhắc giọng nói |
 | `Alt + W` | Bật/tắt nhắc thư giãn |
 | `Alt + X` | Bật/tắt Dictation (gõ bằng giọng nói) |
 | `Alt + V` | YouTube: phát link từ clipboard |
@@ -185,7 +188,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
-- Commit source cho bản phát hành này: `ddb98e9`.
+- Commit source cho bản phát hành này: `cb4a33f`.
 - Tích hợp bộ âm thanh Deep Work theo hướng FocusFlow:
   - Nhịp đồng hồ (ticking) chạy nền khi đang Deep Work.
   - Hiệu ứng thư giãn nền: đêm yên tĩnh, mưa nhỏ, mưa lớn, hồ nước, sóng biển.
@@ -195,10 +198,19 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Chọn ambient effect.
   - Bật/tắt nhắc giọng nói.
   - Chỉnh âm lượng riêng cho từng nhóm âm thanh.
+- Nâng cấp UX âm thanh Deep Work:
+  - Có live preview khi kéo âm lượng, nghe thay đổi ngay lập tức.
+  - Bấm Hủy sẽ hoàn tác toàn bộ thay đổi preview.
+  - Có menu con `🎧 Âm thanh Deep Work` để bật/tắt nhanh 3 thành phần audio.
+- Bổ sung 3 hotkey mặc định cho Deep Work audio:
+  - `Alt+1`: nhịp đồng hồ.
+  - `Alt+2`: ambient.
+  - `Alt+3`: nhắc giọng nói.
+- Sửa luồng thông báo Focus để tránh trùng thông báo trên cùng một event (không còn hiện đồng thời toast + balloon trong cùng sự kiện).
 - Đóng gói assets âm thanh trong installer (`Assets/FocusAudio/...`), không cần tải thêm.
 - Chất lượng phát hành:
   - Build Release + test pass `191/191`.
-  - Installer v1.6.9 SHA256: `7f4922509ba3c4bb0cab0c2bb994a369b3af254e5f7a06ab19076e3212ad9433`.
+  - Installer v1.6.9 SHA256: `d9bcf7bf95ff94e6a37271e13ced01f073cbb49d009f39e765b421ae1426d143`.
 - Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.6.9.exe`.
 
 ### v1.6.8 (2026) – Hotfix Deep Work/Mindfulness không hiện thông báo ổn định
