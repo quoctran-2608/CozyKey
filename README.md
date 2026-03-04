@@ -14,7 +14,7 @@
 ## 🚀 Tải bản mới nhất
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.9.exe](./CozyKey_Setup_v1.6.9.exe)
-- **Dung lượng:** ~49 MB
+- **Dung lượng:** ~51 MB
 - **SHA256:** `cc477fbc79f783896b620d72d3d2036e6acb7806ed24c5623903e1a22a3194f7`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
