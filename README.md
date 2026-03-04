@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.9.exe](./CozyKey_Setup_v1.6.9.exe)
 - **Dung lượng:** ~51 MB
-- **SHA256:** `1fc5149c3acf635c5e3c39b2b3d3a9cec4f53258f5040624cbc04bf217cb98fb`
+- **SHA256:** `2e31d793f3b9d8a0f4a91dea44be5532cfe8f30491e83fefc3be2e5d9c99c2ce`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -185,7 +185,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
-- Commit source cho bản phát hành này: `3855390`.
+- Commit source cho bản phát hành này: `e57eafb`.
 - Tích hợp bộ âm thanh Deep Work theo hướng FocusFlow:
   - Nhịp đồng hồ (ticking) chạy nền khi đang Deep Work.
   - Hiệu ứng thư giãn nền: đêm yên tĩnh, mưa nhỏ, mưa lớn, hồ nước, sóng biển.
@@ -198,7 +198,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 - Đóng gói assets âm thanh trong installer (`Assets/FocusAudio/...`), không cần tải thêm.
 - Chất lượng phát hành:
   - Build Release + test pass `191/191`.
-  - Installer v1.6.9 SHA256: `1fc5149c3acf635c5e3c39b2b3d3a9cec4f53258f5040624cbc04bf217cb98fb`.
+  - Installer v1.6.9 SHA256: `2e31d793f3b9d8a0f4a91dea44be5532cfe8f30491e83fefc3be2e5d9c99c2ce`.
 - Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.6.9.exe`.
 
 ### v1.6.8 (2026) – Hotfix Deep Work/Mindfulness không hiện thông báo ổn định
