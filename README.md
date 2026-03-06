@@ -5,7 +5,7 @@
 > **Bộ gõ tiếng Việt hiện đại cho Windows**  
 > Gõ mượt – tập trung sâu – nhắc thư giãn thông minh – tương thích tốt với app thực tế.
 
-![Version](https://img.shields.io/badge/version-1.6.9-blue)
+![Version](https://img.shields.io/badge/version-1.7-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)
 ![License](https://img.shields.io/badge/license-Freeware-green)
 
@@ -13,9 +13,9 @@
 
 ## 🚀 Tải bản mới nhất
 
-- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.6.9.exe](./CozyKey_Setup_v1.6.9.exe)
+- **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.7.exe](./CozyKey_Setup_v1.7.exe)
 - **Dung lượng:** ~51 MB
-- **SHA256:** `d9bcf7bf95ff94e6a37271e13ced01f073cbb49d009f39e765b421ae1426d143`
+- **SHA256:** `ae0bbe1a6fc352ca1b85e83b309b058427bbd2b14723c8012a7a816182e64770`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -163,7 +163,7 @@ Ví dụ process name hay dùng:
 
 ## Cài đặt nhanh
 
-1. Tải **CozyKey_Setup_v1.6.9.exe**
+1. Tải **CozyKey_Setup_v1.7.exe**
 2. Chạy installer (khuyên chạy quyền Administrator)
 3. Cài đặt theo wizard
 4. Mở CozyKey và kiểm tra icon ở system tray
@@ -186,6 +186,22 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ---
 
 ## Lịch sử phiên bản
+
+### v1.7 (2026) – Tối ưu hiệu năng và khóa tính năng debug gõ phím
+- Commit source cho bản phát hành này: `9c9edaa`.
+- Cập nhật trọng tâm:
+  - Vô hiệu hóa hoàn toàn tính năng debug gõ phím ở runtime.
+  - Ẩn toàn bộ tùy chọn debug gõ khỏi menu người dùng.
+  - Ép `EnableInputDebugLog=false` khi nạp settings để không tái kích hoạt bởi dữ liệu cũ.
+- Tối ưu trải nghiệm trên máy yếu/máy chạy nhiều tác vụ:
+  - Giảm overhead trong luồng hook/hot-path gõ.
+  - Giảm truy vấn Win32 lặp và bổ sung fast-path/cache.
+  - Giảm tải nền bằng lazy init và tối ưu ghi file Adaptive Tuning.
+- Nâng phiên bản ứng dụng lên `1.7`.
+- Chất lượng phát hành:
+  - Build Release + test pass `191/191`.
+  - Installer v1.7 SHA256: `ae0bbe1a6fc352ca1b85e83b309b058427bbd2b14723c8012a7a816182e64770`.
+- Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.7.exe`.
 
 ### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
 - Commit source cho bản phát hành này: `cb4a33f`.
