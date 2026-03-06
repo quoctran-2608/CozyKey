@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.7.exe](./CozyKey_Setup_v1.7.exe)
 - **Dung lượng:** ~51 MB
-- **SHA256:** `ae0bbe1a6fc352ca1b85e83b309b058427bbd2b14723c8012a7a816182e64770`
+- **SHA256:** `fdb8e468414d45ef913011ec76cfe8a12a5dbde0b53a50152e6b044edccb2c6a`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -62,13 +62,14 @@ CozyKey không chỉ là bộ gõ tiếng Việt.
 - Gọi nhanh bằng `Alt+X`.
 - Tự dừng khi im lặng, chèn trực tiếp vào vị trí con trỏ.
 
-### 5) YouTube Mini Audio Player (mới)
+### 5) Cửa sổ YouTube mini + trình duyệt YouTube tích hợp
 - Dán link YouTube và phát trực tiếp ngay trong CozyKey.
 - Mini mode để nghe là chính, chuyển nhanh giữa mini/large/fullscreen.
 - Điều khiển tua tới/lùi, tăng/giảm tốc độ bằng hotkey toàn cục.
-- Hotkey `Alt + B` mở nhanh cửa sổ tìm kiếm/chọn video và tự focus vào ô nhập.
+- Hotkey `Alt + Y` mở nhanh trình duyệt YouTube để tìm/chọn video.
+- Hotkey `Alt + B` mở/hiện Cửa sổ YouTube mini.
 - Khi video đang phát, menu chuột phải hiển thị ngay dòng trạng thái “▶ đang phát...”, bấm vào để mở player.
-- Nút **Phát trong CozyKey** tự đóng cửa sổ tìm kiếm, chỉ giữ cửa sổ player để tránh rối màn hình.
+- Nút **Phát cửa sổ mini** tự đóng cửa sổ trình duyệt, chỉ giữ Cửa sổ YouTube mini để tránh rối màn hình.
 - Tự tối ưu fallback khi gặp lỗi playback/nhúng (153, Playback ID...).
 
 ---
@@ -133,8 +134,8 @@ CozyKey có “khung tập trung” riêng ngay menu chính:
 | `Alt + W` | Bật/tắt nhắc thư giãn |
 | `Alt + X` | Bật/tắt Dictation (gõ bằng giọng nói) |
 | `Alt + V` | YouTube: phát link từ clipboard |
-| `Alt + Y` | YouTube: mở/hiện cửa sổ player |
-| `Alt + B` | YouTube: mở cửa sổ tìm kiếm/chọn video |
+| `Alt + Y` | YouTube: mở trình duyệt tìm kiếm/chọn video |
+| `Alt + B` | YouTube: mở/hiện Cửa sổ YouTube mini |
 | `Alt + M` | YouTube: chuyển Mini/Large |
 | `Alt + K` | YouTube: Play/Pause |
 | `Alt + J` | YouTube: tua lùi 10 giây |
@@ -187,8 +188,8 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 
 ## Lịch sử phiên bản
 
-### v1.7 (2026) – Tối ưu hiệu năng và khóa tính năng debug gõ phím
-- Commit source cho bản phát hành này: `9c9edaa`.
+### v1.7 (2026) – Tối ưu hiệu năng, khóa debug gõ và chuẩn hóa luồng YouTube
+- Commit source cho bản phát hành này: `d592f65`.
 - Cập nhật trọng tâm:
   - Vô hiệu hóa hoàn toàn tính năng debug gõ phím ở runtime.
   - Ẩn toàn bộ tùy chọn debug gõ khỏi menu người dùng.
@@ -197,10 +198,14 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Giảm overhead trong luồng hook/hot-path gõ.
   - Giảm truy vấn Win32 lặp và bổ sung fast-path/cache.
   - Giảm tải nền bằng lazy init và tối ưu ghi file Adaptive Tuning.
+- Chuẩn hóa luồng YouTube:
+  - Hoán đổi hotkey mặc định: `Alt+Y` mở trình duyệt YouTube, `Alt+B` mở Cửa sổ YouTube mini.
+  - Khi đang mở trình duyệt YouTube, bấm `Alt+B` sẽ chuyển video hiện tại sang Cửa sổ YouTube mini và đóng trình duyệt.
+  - Đổi nhãn nút trong trình duyệt thành **“Phát cửa sổ mini”**.
 - Nâng phiên bản ứng dụng lên `1.7`.
 - Chất lượng phát hành:
   - Build Release + test pass `191/191`.
-  - Installer v1.7 SHA256: `ae0bbe1a6fc352ca1b85e83b309b058427bbd2b14723c8012a7a816182e64770`.
+  - Installer v1.7 SHA256: `fdb8e468414d45ef913011ec76cfe8a12a5dbde0b53a50152e6b044edccb2c6a`.
 - Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.7.exe`.
 
 ### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
