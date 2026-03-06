@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.7.exe](./CozyKey_Setup_v1.7.exe)
 - **Dung lượng:** ~51 MB
-- **SHA256:** `fdb8e468414d45ef913011ec76cfe8a12a5dbde0b53a50152e6b044edccb2c6a`
+- **SHA256:** `a061e1d2fd0a72b4d7305c17a6a045e6103d8ab4b53c94acc37bff42cbb6a080`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -189,7 +189,7 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 ## Lịch sử phiên bản
 
 ### v1.7 (2026) – Tối ưu hiệu năng, khóa debug gõ và chuẩn hóa luồng YouTube
-- Commit source cho bản phát hành này: `d592f65`.
+- Commit source cho bản phát hành này: `d617803`.
 - Cập nhật trọng tâm:
   - Vô hiệu hóa hoàn toàn tính năng debug gõ phím ở runtime.
   - Ẩn toàn bộ tùy chọn debug gõ khỏi menu người dùng.
@@ -202,10 +202,12 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Hoán đổi hotkey mặc định: `Alt+Y` mở trình duyệt YouTube, `Alt+B` mở Cửa sổ YouTube mini.
   - Khi đang mở trình duyệt YouTube, bấm `Alt+B` sẽ chuyển video hiện tại sang Cửa sổ YouTube mini và đóng trình duyệt.
   - Đổi nhãn nút trong trình duyệt thành **“Phát cửa sổ mini”**.
+- Hotfix bộ gõ:
+  - Sửa lỗi `neee + m` bị bật lại thành `nêm` sau thao tác gỡ `ee`, giờ giữ đúng literal `neem`.
 - Nâng phiên bản ứng dụng lên `1.7`.
 - Chất lượng phát hành:
   - Build Release + test pass `191/191`.
-  - Installer v1.7 SHA256: `fdb8e468414d45ef913011ec76cfe8a12a5dbde0b53a50152e6b044edccb2c6a`.
+  - Installer v1.7 SHA256: `a061e1d2fd0a72b4d7305c17a6a045e6103d8ab4b53c94acc37bff42cbb6a080`.
 - Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.7.exe`.
 
 ### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
