@@ -15,7 +15,7 @@
 
 - **Installer mới nhất (khuyến nghị):** [⬇️ CozyKey_Setup_v1.7.exe](./CozyKey_Setup_v1.7.exe)
 - **Dung lượng:** ~51 MB
-- **SHA256:** `a061e1d2fd0a72b4d7305c17a6a045e6103d8ab4b53c94acc37bff42cbb6a080`
+- **SHA256:** `1344feb4eb11db9229363138d397b723c5d62889553501c783ad5d3ded6f5d9a`
 - **Lưu ý phát hành:** Repo này chỉ giữ installer mới nhất; bản cũ xem ở tab Releases.
 
 ---
@@ -188,8 +188,8 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
 
 ## Lịch sử phiên bản
 
-### v1.7 (2026) – Tối ưu hiệu năng, khóa debug gõ và chuẩn hóa luồng YouTube
-- Commit source cho bản phát hành này: `d617803`.
+### v1.7 (2026) – Tối ưu hiệu năng, khóa debug gõ, chuẩn hóa luồng YouTube và sửa Dictation
+- Commit source cho bản phát hành này: `a22603f`.
 - Cập nhật trọng tâm:
   - Vô hiệu hóa hoàn toàn tính năng debug gõ phím ở runtime.
   - Ẩn toàn bộ tùy chọn debug gõ khỏi menu người dùng.
@@ -204,10 +204,14 @@ Tri ân Thầy: **Nguyễn Tiến Dũng**
   - Đổi nhãn nút trong trình duyệt thành **“Phát cửa sổ mini”**.
 - Hotfix bộ gõ:
   - Sửa lỗi `neee + m` bị bật lại thành `nêm` sau thao tác gỡ `ee`, giờ giữ đúng literal `neem`.
+- Nâng cấp Dictation:
+  - Sửa lỗi bấm `Alt+X` làm panel Dictation cướp con trỏ, khiến text nhận dạng không chèn vào ô đang gõ.
+  - Ghi nhớ target nhập từ lúc bắt đầu ghi âm và bơm text lại đúng ô đó sau khi nhận dạng xong.
+  - Dùng lại lớp tương thích nhập liệu của CozyKey để ổn định hơn trên Notepad, Word và trình duyệt.
 - Nâng phiên bản ứng dụng lên `1.7`.
 - Chất lượng phát hành:
   - Build Release + test pass `191/191`.
-  - Installer v1.7 SHA256: `a061e1d2fd0a72b4d7305c17a6a045e6103d8ab4b53c94acc37bff42cbb6a080`.
+  - Installer v1.7 SHA256: `1344feb4eb11db9229363138d397b723c5d62889553501c783ad5d3ded6f5d9a`.
 - Dọn repo release: chỉ giữ bản mới nhất `CozyKey_Setup_v1.7.exe`.
 
 ### v1.6.9 (2026) – Nâng cấp Deep Work với nhịp đồng hồ, ambient và nhắc giọng nói
